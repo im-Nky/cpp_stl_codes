@@ -14,7 +14,15 @@ int main()
 	// vector with size 5 and all 5 elements holds value 10
 	vector <int> v3 (5,10);
 	vector <string> v4 (3,"hello");	
-
+	
+	// Vector intialized using array
+	int arr[] = { 10, 20, 30 }; 
+    	int n = sizeof(arr) / sizeof(arr[0]);
+    	vector<int> vect(arr, arr + n);
+	
+	// Vector intialized using vectot v1
+	vector<int> vect2(v1.begin(), v1.end());
+	
 	cout <<"Accessing vector elements"<<endl;
 	cout <<v4[0]<<endl;
 	cout <<v4[1]<<endl;
