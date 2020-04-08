@@ -1,0 +1,28 @@
+# Use Sequential containers when you need to access element by position.
+
+# Use vectors as default sequential container intead of array.
+
+# If situation demands add (or) remove from both end frequently use "deque".
+
+# Priority queues are a type of container adapters, specifically designed 
+such that the "first element" of the queue is the "greatest" of all elements in
+the queue and elements are in non increasing order(hence we can see that each
+element of the queue has a priority{fixed order}).
+
+# use list(not deque) when element need to insert  in middle of sequence.
+
+# Don't use list if random access is required.
+
+# Prefer vector over list if your system uses cache b/c memory isn't stored 
+continously increases chance of missing cache significantly.(embedded system don't
+utiliza cache so list is acceptable.)
+
+# for key/value pair default to unordered map , or if order matters use map.
+
+# If you need multiple enteries for same key use unordered_multimap (or) order matters 
+use multimap.
+
+# Contnously: Vector, array & string
+
+-> Deque allocates memory in chunks.
+-> List allocates memory in nodes.
