@@ -34,5 +34,5 @@ int main()
 
 	// removing last element
 	v1.pop_back();
-
+	return 0;
 }
