@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 	unordered_set <int> v = {23,54,5,46465,777,6,87};
 	
-	if (v.find(26)!=v.end()) 
+	if (v.find(26)!=v.end()) // finds end iterator if element not found 
 		cout <<"Element Found "<<endl;
 	else
 		cout <<"Element Not Found"<<endl;
